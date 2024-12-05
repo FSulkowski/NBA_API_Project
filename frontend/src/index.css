@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+div {
+  margin: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+/* Add this to index.css to style the search bar */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
