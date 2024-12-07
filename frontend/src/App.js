@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PlayerList from './components/PlayerList';
 import PlayerDetails from './components/PlayerDetails';
 
+
+
 function App() {
   const [selectedPlayerId, setSelectedPlayerId] = useState(null);
   const [selectedPlayerName, setSelectedPlayerName] = useState('');

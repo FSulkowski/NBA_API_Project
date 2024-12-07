@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Comparison</title>
+</head>
+<body>
+    <h1>Player Comparison</h1>
+    <div>
+        <h2>Player 1: {{ player_1.first_name }} {{ player_1.last_name }}</h2>
+        <ul>
+            {% for stat in player_1_stats %}
+            <li>
+                Season: {{ stat.season_id }} | Points: {{ stat.ppg }} | Rebounds: {{ stat.rpg }} | Assists: {{ stat.apg }}
+                | Steals: {{ stat.spg }} | Blocks: {{ stat.bpg }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <h2>Player 2: {{ player_2.first_name }} {{ player_2.last_name }}</h2>
+        <ul>
+            {% for stat in player_2_stats %}
+            <li>
+                Season: {{ stat.season_id }} | Points: {{ stat.ppg }} | Rebounds: {{ stat.rpg }} | Assists: {{ stat.apg }}
+                | Steals: {{ stat.spg }} | Blocks: {{ stat.bpg }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
